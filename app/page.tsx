@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Barcode from "react-barcode";
-import { printBarcodes } from "./utils/printBarcodes";
+import Barcode from "@/lib/react-barcode";
+import { printBarcodes } from "@/app/utils/printBarcodes";
 
 const BarcodeGenerator: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>("");
