@@ -1,0 +1,22 @@
+diff --git a/lib/index.d.ts b/lib/index.d.ts
+index 9e0ff05b8f043297e5df3f8ff90b53ff2d55bc2b..b6a5e9c3ab000d77460fae190c66e216259d1769 100644
+--- a/lib/index.d.ts
++++ b/lib/index.d.ts
+@@ -41,6 +41,7 @@ export interface Options {
+   marginLeft?: number;
+   marginRight?: number;
+   ean128?: boolean;
++  text?: string;
+ }
+ 
+ export interface BarcodeProps extends Options {
+@@ -48,6 +49,7 @@ export interface BarcodeProps extends Options {
+ }
+ 
+ export default class Barcode extends React.Component<BarcodeProps> {
+-  renderElementRef: React.RefObject<HTMLCanvasElement | SVGElement | HTMLImageElement>;
++  renderElementRef: React.RefObject<
++    HTMLCanvasElement | SVGElement | HTMLImageElement
++  >;
+ }
+-
