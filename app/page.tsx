@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Barcode from "react-barcode";
-import { printBarcodes } from "./utils/printBarcodes";
+import { printBarcodes } from "@/app/utils/printBarcodes";
 
 const BarcodeGenerator: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>("");
@@ -79,7 +79,7 @@ const BarcodeGenerator: React.FC = () => {
                 className="w-full px-4 py-3 text-base border border-gray-300 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               >
                 <option value="single">Tekli Görüntüle</option>
-                <option value="triple">3'lü Görüntüle</option>
+                <option value="triple">3&apos;lü Görüntüle</option>
               </select>
             </div>
 

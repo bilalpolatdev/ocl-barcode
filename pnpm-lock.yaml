@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  react-barcode@1.5.3:
+    hash: j5e3uwwpbklu63vt6wdr67j34m
+    path: patches/react-barcode@1.5.3.patch
+
 importers:
 
   .:
@@ -16,7 +21,7 @@ importers:
         version: 19.0.0
       react-barcode:
         specifier: ^1.5.3
-        version: 1.5.3(react@19.0.0)
+        version: 1.5.3(patch_hash=j5e3uwwpbklu63vt6wdr67j34m)(react@19.0.0)
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
@@ -3096,7 +3101,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-barcode@1.5.3(react@19.0.0):
+  react-barcode@1.5.3(patch_hash=j5e3uwwpbklu63vt6wdr67j34m)(react@19.0.0):
     dependencies:
       jsbarcode: 3.11.6
       prop-types: 15.8.1
